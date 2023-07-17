@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SoftwareX</title>
+    <style>
+        * {
+            color: #000000b6
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h-[8vh] w-full top-0 fixed flex items-center justify-between px-[5vw] bg-white shadow-md z-10">
+        <p class="font-bold text-[28px] text-[#0077ff]">SoftwareX</p>
+
+        <div class="w-[30%] flex items-center justify-between max-lg:w-[50%] max-sm:hidden">
+            <p class="hover:text-[#0077ff] duration-200 cursor-pointer">Home</p>
+            <p class="hover:text-[#0077ff] duration-200 cursor-pointer">Services</p>
+            <p class="hover:text-[#0077ff] duration-200 cursor-pointer">About us</p>
+            <p class="hover:text-[#0077ff] duration-200 cursor-pointer">Contact us</p>
+        </div>
+
+        <div class="hidden max-sm:flex" onclick="openMenu()">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+    </div>
+
+    <div id="mainmenu"
+        class="fixed top-[8vh] right-0 pr-12 w-max h-max bg-white shadow-md hidden max-sm:block translate-y-[-180px] duration-300">
+        <p class="hover:text-[#0077ff] py-2 px-4 duration-200 cursor-pointer">Home</p>
+        <p class="hover:text-[#0077ff] py-2 px-4 duration-200 cursor-pointer">Services</p>
+        <p class="hover:text-[#0077ff] py-2 px-4 duration-200 cursor-pointer">About us</p>
+        <p class="hover:text-[#0077ff] py-2 px-4 duration-200 cursor-pointer">Contact us</p>
+    </div>
+
+    <div class="h-[70vh] max-sm:h-screen w-full px-[10vw] max-sm:px-0 bg-slate-200 flex flex-col items-center justify-center"
+        onclick="closeMenu()">
+        <p class="font-bold text-[3.5vw] max-md:text-[6.5vw] max-sm:text-[11vw] text-center">Transform your Business
+            with
+            <span class="text-[#0077ff] text-[4vw] max-md:text-[7vw] max-sm:text-[14vw]">SoftwareX</span>
+        </p>
+        <p class="text-[18px] max-md:text-[14px] max-sm:text-[12px] max-sm:px-5 text-center max-sm:mt-4">We provide
+            software solutions that
+            enable
+            businesses to
+            digitize their
+            operations and
+            improve efficiency. Our
+            team of experienced developers and designers works closely with clients to deliver high-quality solutions
+            that meet their business objectives.</p>
+        <button onclick="openPopup()"
+            class="mt-8 bg-[#0077ff] text-white px-8 py-4 rounded-full cursor-pointer duration-300 shadow-2xl hover:shadow-lg">Get
+            Started</button>
+    </div>
+
+    <div class="h-max flex flex-col items-center justify-center py-12" onclick="closeMenu()">
+        <p class="font-bold text-[32px]">Our Services</p>
+
+        <div class="w-full px-[10vw] py-12 grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-8">
+            <div
+                class="shadow-lg shadow-blue-200 p-4 rounded-lg cursor-pointer duration-300 hover:shadow-2xl hover:shadow-blue-200">
+                <div class="flex flex-col items-center justify-start mb-5 text-[#0077ff]">
+                    <span class="material-symbols-outlined text-[40px] font-semibold my-4">
+                        palette
+                    </span>
+                    <p class="ml-2 text-[20px] font-semibold">UI/UX Design</p>
+                </div>
+                <p class="text-center">
+                    We provide custom web development solutions that are tailored to the specific needs of our clients.
+                </p>
+            </div>
+            <div
+                class="shadow-lg shadow-blue-200 p-4 rounded-lg cursor-pointer duration-300 hover:shadow-2xl hover:shadow-blue-200">
+                <div class="flex flex-col items-center justify-start mb-5 text-[#0077ff]">
+                    <span class="material-symbols-outlined text-[40px] font-semibold my-4">
+                        desktop_windows
+                    </span>
+                    <p class="ml-2 text-[20px] font-semibold">Web App Development</p>
+                </div>
+                <p class="text-center">
+                    We provide custom web development solutions that are tailored to the specific needs of our clients.
+                </p>
+            </div>
+            <div
+                class="shadow-lg shadow-blue-200 p-4 rounded-lg cursor-pointer duration-300 hover:shadow-2xl hover:shadow-blue-200">
+                <div class="flex flex-col items-center justify-start mb-5 text-[#0077ff]">
+                    <span class="material-symbols-outlined text-[40px] font-semibold my-4">
+                        smartphone
+                    </span>
+                    <p class="ml-2 text-[20px] font-semibold">Mobile App Development</p>
+                </div>
+                <p class="text-center">
+                    We specialize in developing custom mobile apps for iOS and Android platforms that meet the unique
+                    needs
+                    of our clients
+                </p>
+
+            </div>
+            <div
+                class="shadow-lg shadow-blue-200 p-4 rounded-lg cursor-pointer duration-300 hover:shadow-2xl hover:shadow-blue-200">
+                <div class="flex flex-col items-center justify-start mb-5 text-[#0077ff]">
+                    <span class="material-symbols-outlined text-[40px] font-semibold my-4">
+                        analytics
+                    </span>
+                    <p class="ml-2 text-[20px] font-semibold">Business Analytics</p>
+                </div>
+                <p class="text-center">
+                    We provide custom web development solutions that are tailored to the specific needs of our clients.
+                </p>
+            </div>
+            <div
+                class="shadow-lg shadow-blue-200 p-4 rounded-lg cursor-pointer duration-300 hover:shadow-2xl hover:shadow-blue-200">
+                <div class="flex flex-col items-center justify-start mb-5 text-[#0077ff]">
+                    <span class="material-symbols-outlined text-[40px] font-semibold my-4">
+                        rocket_launch
+                    </span>
+                    <p class="ml-2 text-[20px] font-semibold">Marketting</p>
+                </div>
+                <p class="text-center">
+                    We provide custom web development solutions that are tailored to the specific needs of our clients.
+                </p>
+            </div>
+            <div
+                class="shadow-lg shadow-blue-200 p-4 rounded-lg cursor-pointer duration-300 hover:shadow-2xl hover:shadow-blue-200">
+                <div class="flex flex-col items-center justify-start mb-5 text-[#0077ff]">
+                    <span class="material-symbols-outlined text-[40px] font-semibold my-4">
+                        shopping_cart
+                    </span>
+                    <p class="ml-2 text-[20px] font-semibold">E-commerce Solutions</p>
+                </div>
+                <p class="text-center">We offer e-commerce solutions that are tailored to the specific needs of our
+                    clients to help them
+                    grow
+                    their online businesses</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#0077ff] py-12 flex flex-col items-center justify-center" onclick="closeMenu()">
+        <p class="text-white font-bold text-[32px] max-sm:text-[24px] text-center">Ready to Transform Your Business?
+        </p>
+        <button
+            class="mt-8 bg-white text-[#0077ff] font-semibold px-8 py-4 rounded-full cursor-pointer duration-300 shadow-2xl hover:shadow-lg">Get
+            Started</button>
+    </div>
+
+
+    <div class="py-12 flex flex-col items-center justify-center" onclick="closeMenu()">
+        <p class="text-black font-bold text-[32px] max-sm:text-[24px] text-center mb-8">Contact us</p>
+        <div class="w-full h-max px-[10%] flex items-center justify-between">
+
+            <div class="h-[400px] w-full bg-slate-500 rounded-lg overflow-hidden">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7634549235786!2d77.61353415042831!3d13.050723190758893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1738b55c733f%3A0x1084043fa21f1260!2sRaj%20Nivas!5e0!3m2!1sen!2sin!4v1680099557801!5m2!1sen!2sin"
+                    width="1400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- <div class="h-[400px] w-[18%] ">
+                <p class="font-semibold mb-2">Address :</p>
+                <p>Raj Nivas</p>
+                <p>3J28+77, Mariyannapalya,</p>
+                <p>Thanisandra, Bengaluru</p>
+                <p>Karnataka 560024</p>
+            </div> -->
+        </div>
+    </div>
+
+    <div id="popup" class="fixed top-0 left-0 h-screen w-screen hidden items-center justify-center bg-[#000000b6] z-30">
+
+        <div
+            class="bg-white w-[50vw] max-sm:w-[90vw] h-max rounded-xl flex flex-col items-center justify-start py-5 relative">
+            <span onclick="openPopup()"
+                class="material-symbols-outlined absolute right-4 top-4 cursor-pointer font-bold">
+                close
+            </span>
+            <p class="font-bold text-[32px]">Get in touch</p>
+            <form action="mailto:conact@softwarex.in" method="post" enctype="text/plain">
+                <input type="text" placeholder="Name" class="mt-8 w-[80%] bg-slate-200 px-5 py-3 rounded" name="name"
+                    id="name">
+                <input type="text" placeholder="Email address" class="mt-8 w-[80%] bg-slate-200 px-5 py-3 rounded"
+                    name="email" id="email">
+                <textarea rows="5" placeholder="Message" class="mt-8 w-[80%] bg-slate-200 px-5 py-3 rounded"
+                    name="message" id="message"></textarea>
+                <button type="submit"
+                    class="my-8 bg-[#0077ff] text-white w-[80%] px-8 py-4 rounded cursor-pointer duration-300 shadow-2xl hover:shadow-lg">Send</button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <div class="bg-neutral-200 text-center py-4">
+        <p>Copyright @ 2023 SoftwareX</p>
+    </div>
+
+    <script>
+        function openMenu() {
+            var elem = document.getElementById('mainmenu');
+            if (elem.classList.contains("translate-y-[0px]")) {
+                elem.classList.remove('translate-y-[0px]');
+                elem.classList.add("translate-y-[-180px]");
+            } else {
+                elem.classList.remove("translate-y-[-180px]");
+                elem.classList.add('translate-y-[0px]');
+            }
+        }
+
+        function closeMenu() {
+            var elem = document.getElementById('mainmenu');
+            elem.classList.remove('translate-y-[0px]');
+            elem.classList.add("translate-y-[-180px]");
+        }
+
+        function openPopup() {
+            var elem = document.getElementById('popup');
+            if (elem.classList.contains("hidden")) {
+                elem.classList.remove('hidden');
+                elem.classList.add("flex");
+            } else {
+                elem.classList.remove("flex");
+                elem.classList.add('hidden');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
